@@ -16,7 +16,7 @@ class Shirt(models.Model):
     COLOR_N=(("red","Red") , ("green" , "Green") , ("black" ,"Black") , ("specific","Specific"))
     title=models.CharField(max_length=50)
     type=models.CharField(max_length=45 , default="noun")
-    category=models.ForeignK    ey(Category, on_delete=models.DO_NOTHING)
+    category=models.ForeignKey(Category, on_delete=models.DO_NOTHING)
     weave_types=models.CharField(max_length=50 , default="noun")
     ply=models.CharField(max_length=30 , choices=PLY_S , default="Single-ply")
     color=models.CharField(max_length=45 , choices=COLOR_N , default="Specific")
