@@ -1,0 +1,38 @@
+.leate-product-holder {
+    margin: 100px auto;
+    position: relative;
+}
+
+.leates-products {
+    padding: 10px;
+}
+
+
+.l_products {
+    position: relative;
+    background-image: url(/ecommerce/market/static/imgs/download.png);
+    max-width: 250px;
+    padding: 150px;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(148, 145, 180);
+    background-repeat: no-repeat;
+    margin: 10px;
+    border-radius: 11px;
+    text-align: center;
+    color: #fff;
+}
+
+
+.l_products h2 {
+    font-size: 20px;
+    display: block;
+    margin-top: 89px;
+}
+
+
+
+.l_products .bnt-herooo:hover {
+    background: #fff;
+    color: rgb(83, 77, 151);
+}

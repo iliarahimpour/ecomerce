@@ -1,0 +1,444 @@
+@font-face {
+ font-family: "iranyekanweblight";
+ src: local("iranyekanweblight"), local("fonts/iranyekanweblight"), url("fonts/iranyekanweblight.woff") format("woff"), url("fonts/iranyekanweblight.ttf") format("truetype"), url("fonts/iranyekanweblight.svg") format("svg");
+}
+@font-face {
+ font-family: "wordpressim";
+ src: local("wordpressim"), local("fonts/wordpressim"), url("fonts/wordpressim.ttf") ;
+}
+ div, p , input, textarea,option,select,a,span,b,li,ol{
+	 font-family: "iranyekanweblight" !important;
+}
+h1, h2, h3, h4, h5, h6{
+	 font-family: "aviny" !important;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+ font-family: "iranyekanweblight" !important;
+}
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
+ font-family: "aviny" !important;
+ font-weight: bold !important;
+}
+*{
+	letter-spacing: 0 !important;
+}
+.gm-style .place-card div, .gm-style .place-card a, .gm-style .default-card div, .gm-style .default-card a,.gm-style{
+font-family: iranyekanweblight !important;
+}
+.fwordpressim{
+ font-family: "wordpressim" !important;
+}
+	@font-face {
+	  font-family: "nechar";
+	  src: url("fonts/negar.ttf");
+}
+	@font-face {
+	  font-family: "iransans";
+	  src: url("fonts/Bwordpressim.ttf");
+}
+	@font-face {
+	  font-family: "iransansDN";
+	  src: url("fonts/iransansdn.ttf");
+}
+	@font-face {
+	  font-family: "LalezarRegular";
+	  src: url("fonts/LalezarRegular.ttf");
+}
+	@font-face {
+	  font-family: "aviny";
+	  src: url("fonts/aviny.ttf");
+}
+.f-nechar{
+ font-family: "nechar" !important;
+}
+.f-iransans{
+ font-family: "iransans" !important;
+}
+.f-iransansdn{
+ font-family: "iransansDN" !important;
+}
+.f-lalezar-regular{
+ font-family: "LalezarRegular" !important;
+}
+.f-aviny{
+ font-family: "aviny" !important;
+}
+
+
+/*****************************
+*****--------------------*****
+*****--------------------*****
+*****************************/
+
+
+
+.header.style-2 .top-bar-menu:not(.right) > *:first-child > a {
+    padding-left: 20px !important;
+    padding-right: 10px !important;
+}
+.top-bar-menu:not(.right) > * {
+    margin-left: 0 !important;
+}
+.top-bar-menu:not(.right) > *:last-child {
+    margin-right: auto !important;
+    margin-left: 0 !important;
+}
+#yith-quick-view-content .onsale, .onsale {
+    direction: ltr;
+}
+.ovic-product.product-item.default .content {
+    padding-left: 0 !important;
+    padding-right: 40px !important;
+}
+.ovic-product.product-item.default .url-container .button, .ovic-product.product-item.default .url-container .wc-forward {
+    margin-right: auto !important;
+    margin-left: 10px !important;
+}
+.header-mobile .form-content input {
+    padding-left: 63px !important;
+    padding-right: 20px !important;
+}
+
+.ovic-products.style-7 .slick-slider .prev.slick-arrow {
+    left: 40px !important;
+    right: auto !important;
+}
+.slick-slider .slick-arrow {
+    line-height: 31px !important;
+    font-size: 20px !important;
+    right: auto !important;
+    left: 0;
+}
+.ovic-products.style-7 .slick-slider .slick-arrow, .ovic-products.style-8 .slick-slider .slick-arrow {
+    right: auto;
+    left: 0 !important;
+}
+.ovic-countdown {
+    direction: ltr;
+}
+
+.product-item.style-7 .add-to-cart {
+    margin: 0  !important;
+}
+.ovic-iconbox.style7 .countdown-container, .ovic-iconbox.style8 .countdown-container {
+    direction: ltr;
+}
+.add-to-cart a {
+    font-size: 11px;
+}
+
+/*********** HAMID CSS START ***********/
+
+.title {
+font-family: "LalezarRegular";
+}
+.tp-caption {
+font-family: "LalezarRegular" ;
+}
+.rev-btn {
+font-family: "DroidArabicKufi";
+}
+/* mystyle */
+.ovic-tabs.style1 .tab-link li.style6.active a::after {
+bottom: -6px;
+}
+.product-item.style-1.style-6 .product-inner:hover .group-button {
+	top: calc(100% + 5px);
+}
+.variations .label {
+text-align: right;
+}
+.woocommerce-Tabs-panel .commentlist .comment .avatar {
+margin-left: 15px;
+float: right;
+margin-right: 0;
+}
+.entry-summary .variations .reset_variations {
+right: 100%;
+left: 0;
+margin-right: 5px;
+}
+.shop-control-item select {
+padding: 0px 15px 0 15px;
+}
+.mobile-footer-inner .icon .count {
+top: -5px;
+min-width: 18px;
+height: 18px;
+}
+.ovic-menu-clone-wrap {
+-webkit-box-shadow: -3px 5px 14px -3px rgba(0, 0, 0, 0.11);
+-moz-box-shadow: -3px 5px 14px -3px rgba(0, 0, 0, 0.11);
+box-shadow: -3px 5px 14px -3px rgba(0, 0, 0, 0.11);
+}
+.ovic-instagram.style1 .title-container {
+text-align: right;
+}
+.woocommerce-products-header .fa-angle-left::before {
+content: "\f104" !important;
+}
+.woocommerce-products-header .fa-angle-right::before {
+	content: "\f104" !important;
+}
+.widget_shopping_cart .widget_shopping_cart_content .button.wc-forward > * {
+margin-left: 15px;
+margin-right: 0;
+}
+.ovic-menu-panels-actions-wrap::before {
+content: 'منو اصلی';
+text-align: center;
+line-height: 50px;
+padding: 0 50px;
+display: block;
+}
+.blog-single01.blog-new .post-title {
+line-height: 33px;
+}
+.ovic-iconbox.style6 .number .text-label {
+margin-right: 6px;
+margin-left: 0;
+}
+#yith-quick-view-content .slider-nav .slick-arrow {
+font-size: 0 !important;
+}
+.ovic-products-style7 .product-item.style-10 .review-count {
+margin-right: 2px;
+margin-left: 0;
+}
+.post-meta .post-meta-group .comment-count i {
+margin-left: 4px;
+margin-right: 0;
+}
+.widget_shopping_cart .widget_shopping_cart_content .buttons > * {
+margin-left: 15px;
+margin-right: 0;
+}
+.widget_shopping_cart .widget_shopping_cart_content .buttons > .button.checkout.wc-forward{
+margin-left: 0 !important;
+}
+.widget_shopping_cart .woocommerce-mini-cart li .remove {
+left: 2px;
+right: auto;
+}
+.widget_shopping_cart .woocommerce-mini-cart li {
+padding-left: 16px;
+padding-right: 0;
+}
+.wc-tabs li a::after {
+bottom: -7px;
+}
+.shiping-class, .shiping-class-des {
+line-height: 1.4;
+}
+.price_slider_wrapper .price_slider_amount .price_label .from, .price_slider_wrapper .price_slider_amount .price_label .to {
+padding: 5px 15px;
+}
+.price_slider_wrapper .price_slider_amount .price_label {
+margin-top: 5px;
+}
+.ovic-custommenu.style05 .widget_nav_menu .ovic-menu-wapper > .menu > li > .sub-menu {
+z-index: 101;
+}
+.ovic-banner.style5 .texts {
+	left: auto;
+	right: 5px;
+}
+.ovic-products.style-6.ovic-products-style6 {
+	overflow-x: hidden;
+}
+.owl-slick.blog-list-owl.slick-slider .fa-angle-right::before {
+	content: "\f105" !important;
+}
+.owl-slick.blog-list-owl.slick-slider .fa-angle-left::before {
+	content: "\f104" !important;
+}
+.entry-summary .ovic-share-socials a {
+    margin: 0 6px 5px 15px !important;
+}
+.ovic-product.product-item.default .content .attribute-name {
+    font-weight: bold !important;
+}
+.post-style3 .post-info .post-content-group .post-author a {
+    font-weight: bold !important;
+}
+.fa {
+    font-family: FontAwesome !important;
+}
+.title {
+    font-family: "aviny" !important;
+}
+.ovic-menu li > a > .icon {
+    margin-left: 10px !important;
+    margin-right: auto !important;
+}
+.ovic-slide-style1 .title-container .slider_title {
+    font-family: "aviny" !important;
+}
+.ovic-iconbox {
+    background-position: right !important;
+}
+.page-404 {
+    background-image: url(http://amoozeshno.ir/wordpressim/biolife/wp-content/uploads/download.jpg) !important;
+}
+.mfp-counter {
+    left: 0 !important;
+    right: auto !important;
+}
+.mobile-footer-inner .icon .count {
+    left: -10px !important;
+    right: auto !important;
+}
+.entry-summary .variations select {
+    padding: 0 15px 0 25px !important;
+}
+.wc-tabs {
+    padding: 0 0 6px 0 !important;
+}
+.widget_search .search-field {
+    padding: 8px 20px 8px 56px !important;
+}
+.ovic-expand-all {
+    left: 40px !important;
+    right: auto !important;
+}
+
+/**** HAMID ESLAMI CSS START ****/
+
+.wpb_single_image.vc_align_left {
+    text-align: right !important;
+}
+.wpb_single_image.vc_align_right {
+    text-align: left !important;
+}
+.woocommerce .cart-collaterals {
+    margin-left: auto !important;
+    margin-right: 25px !important;
+}
+.blog-new ~ .post-comments .comments-title span i {
+    left: 0 !important;
+    right: auto !important;
+}
+.blog-new ~ .post-comments .comments-title span {
+    padding-left: 22px !important;
+    padding-right: 0 !important;
+    font-family: "iranyekanweblight" !important;
+}
+.blog-new ~ .post-comments .comments-title span i {
+    font-family: "iranyekanweblight" !important;
+}
+.post-comments .avatar {
+    margin-left: 5px !important;
+    margin-right: auto !important;
+}
+.blog-new ~ .post-comments .comment-info .comment-name {
+    margin-left: 20px !important;
+    margin-right: auto !important;
+}
+.blog-single01.blog-new blockquote {
+    margin-right: 0 !important;
+    margin-left: auto !important;
+}
+.post-comments .comment-info .reply-content a:before {
+    margin-left: 8px !important;
+    margin-right: auto !important;
+}
+.blog-new ~ .post-comments .comment-respond .comment-form .form-submit {
+    text-align: right !important;
+}
+.blog-new ~ .post-comments .comment-meta .comment-edit-link {
+    margin-right: 10px !important;
+    margin-left: auto !important;
+}
+.search-submit span.flaticon-magnifying-glass {
+    color: #222 !important;
+}
+
+
+
+.compare-list tr {
+    direction: rtl !important;
+    display: table;
+    width: 100%;
+}
+
+.rtl table.compare-list tbody th {
+padding-right: 10px;
+}
+table.compare-list .price td {
+    text-decoration: none;
+}
+
+
+
+/**** HSMID ESLMI CSS END ****/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1366px){
+.main-menu > .menu-item .sub-menu:not(.megamenu) {
+    left: auto !important;
+    right: 0 !important;
+}
+}
+
+
+@media (max-width: 991px){
+.ovic-product.product-item.default .content {
+    padding-right: 0 !important;
+}
+.vc_custom_1551965009103 {
+    border-left-width: 0px !important;
+}
+}
+
+
+
+
+@media (max-width: 479px){
+   .ovic-products-style7 .product-info {
+    padding-right: 15px !important;
+} 
+.ovic-products.style-7 .ovic-title, .ovic-products.style-8 .ovic-title {
+    font-size: 25px;
+}
+
+}
+
+
+@media (min-width: 1200px){
+.vc_col-lg-offset-3 {
+    margin-left: auto !important;
+    margin-right: 25% !important;
+}
+}
