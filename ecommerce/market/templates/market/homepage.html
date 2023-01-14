@@ -6,6 +6,18 @@
 
 {% block style %}
 <link rel="stylesheet" href={% static 'css/homepage.css' %}>
+<style>
+    .course-col h3 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .course-col {
+        text-align: left;
+        font-weight: 500;
+        margin-top: 15px;
+    }
+</style>
 {% endblock style %}
 
 
@@ -15,7 +27,7 @@
 
 
 <!-- END HEADER -->
-<nav class="navbar navbar-expand-md text-center bg-body-tertiary">
+{% comment %} <nav class="navbar navbar-expand-md text-center bg-body-tertiary">
     <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,7 +54,7 @@
             </ul>
         </div>
         <div class="nav-img-holder">
-            <img src='' class="navbar-brand" alt="">
+            <img src={% static 'imgs/logo-white.png' %} class="navbar-img" style="width: 90px; padding: -110px;" alt="">
 
         </div>
 
@@ -64,7 +76,7 @@
         </div>
     </div>
     </div>
-</nav>
+</nav> {% endcomment %}
 
 
 
@@ -74,21 +86,15 @@
         iure.</p>
 
     <div class="row">
+        {% for shoe in shoes %}
         <div class="col-sm-12 col-lg-4 course-col">
-            <img src={% static 'imgs/branding-1.jpg'%} alt="">
-            <h3>Intermediate</h3>
-            <a href="" class="btn-hero second">Shop now</a>
+            <img src={% static 'imgs/branding-1.jpg' %} alt="">
+            <h3>{{shoe.title}}</h3>
+            <p>Brand : {{shoe.brand}}</p>
+            <p>Price : {{shoe.price}}</p>
+            <a href={% url 'product_detail' pk=shoe.pk %} class="btn-hero second">Shop now</a>
         </div>
-        <div class="col-sm-12 col-lg-4 course-col">
-            <img src={% static 'imgs/branding-1.jpg'%} alt="">
-            <h3>Intermediate</h3>
-            <a href="" class="btn-hero second">Shop now</a>
-        </div>
-        <div class="col-sm-12 col-lg-4 course-col">
-            <img src={% static 'imgs/branding-1.jpg'%} alt="">
-            <h3>Intermediate</h3>
-            <a href="" class="btn-hero second">Shop now</a>
-        </div>
+        {% endfor %}
     </div>
 </div>
 
@@ -97,28 +103,28 @@
     <h1>Our global campus</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit .
         sequi a.</p>
-        <div class="container">
-    <div class="row">
-        <div class="campus-col">
-            <img src="/py\ex\Images\/london.png" alt="">
-            <div class="layer">
-                <h3>LONDON</h3>
+    <div class="container">
+        <div class="row">
+            <div class="campus-col">
+                <img src="/py\ex\Images\/london.png" alt="">
+                <div class="layer">
+                    <h3>LONDON</h3>
+                </div>
             </div>
-        </div>
-        <div class="campus-col">
-            <img src="/py\ex\Images/newyork.png" alt="">
-            <div class="layer">
-                <h3>NEW YORK</h3>
+            <div class="campus-col">
+                <img src="/py\ex\Images/newyork.png" alt="">
+                <div class="layer">
+                    <h3>NEW YORK</h3>
+                </div>
             </div>
-        </div>
-        <div class="campus-col">
-            <img src="/py\ex\Images\washington.png" alt="">
-            <div class="layer">
-                <h3>WASHINGTON</h3>
+            <div class="campus-col">
+                <img src="/py\ex\Images\washington.png" alt="">
+                <div class="layer">
+                    <h3>WASHINGTON</h3>
+                </div>
             </div>
         </div>
     </div>
-</div>
 </div>
 <!-- END CAMPUS -->
 

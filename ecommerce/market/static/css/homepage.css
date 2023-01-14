@@ -101,6 +101,12 @@ li.submenu:hover .nav-dropdown {
     display: none;
 }
 
+
+.course-col svg {
+    color: #f44336;
+}
+
+
 @media (max-width:700px) {
 
     .nav-textbox {
@@ -175,7 +181,7 @@ li.submenu:hover .nav-dropdown {
 
 .course>h1 {
     font-weight: 600;
-    font-size: 38px;
+    font-size: 30px;
 }
 
 
@@ -426,4 +432,19 @@ li.submenu:hover .nav-dropdown {
 
 .bi-heart {
     color: #f44336;
+}
+
+
+
+
+.course-col h3 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.course-col {
+    text-align: left;
+    font-weight: 500;
+    margin-top: 15px;
 }
