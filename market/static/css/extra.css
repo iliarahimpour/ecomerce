@@ -1,0 +1,5 @@
+.nav-img-holder {
+    display: flex;
+    justify-content: end;
+    width: 10%;
+}
