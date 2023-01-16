@@ -5,78 +5,8 @@
 
 body {
     font-family: sans-serif;
-
+    background: #f44336;
 }
-
-nav {
-    width: 100%;
-}
-
-.navbar-collapse {
-    margin: 15px;
-    font-size: 18px;
-}
-
-.nav-item {
-    margin-right: 41px;
-    color: #000;
-}
-
-.nav-img-holder {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.nav-dropdown {
-    position: absolute;
-    top: 100%;
-    right: 0%;
-    z-index: 1;
-    width: 100px;
-    text-align: right;
-    display: inline-block;
-    list-style: none;
-    padding-left: 0px;
-    display: none;
-    text-align: center;
-}
-
-.nav-dropdown li:hover {
-    background-color: rgb(255, 0, 0);
-    color: #fff;
-}
-
-li.submenu:hover .nav-dropdown {
-    display: block;
-}
-
-.nav-dropdown li {
-    padding: 5px;
-    border: 1px solid #eee;
-    cursor: pointer;
-    background-color: #fff;
-    color: #000;
-    position: relative;
-    border-radius: 5px;
-    transition: 0.3s;
-    margin: 1px;
-}
-
-
-
-.submenu .nav-link::after {
-    content: "\25BC";
-    font-size: 0.7em;
-    padding-right: 2px;
-}
-
-.submen:hover ::after {
-    content: "\25B2";
-    font-size: 0.7em;
-    padding-right: 2px;
-}
-
 
 .btn-hero {
     border: 1px solid #fff;
@@ -95,93 +25,10 @@ li.submenu:hover .nav-dropdown {
     border: 1px solid rgb(255, 0, 0);
 }
 
-.btn-close,
-.btn-menu {
-    background: transparent;
-    border: none;
-    display: none;
-}
-
 
 .course-col svg {
     color: #f44336;
 }
-
-
-@media (max-width:700px) {
-
-    .nav-textbox {
-        margin-top: 150px;
-        margin-left: 16px;
-        line-height: 20px;
-    }
-
-    .nav-textbox h1 {
-        font-size: 20px;
-    }
-
-    .nav-textbox p {
-        font-size: 12px;
-        padding-top: 2px;
-    }
-
-    .navbar-links ul li {
-        display: block;
-    }
-
-    nav {
-        padding: 2rem 2.5rem;
-    }
-
-
-    .navbar-links {
-        /* background: #000;
-        text-align: left;
-        margin-top: 620px;
-        padding: 0;
-        margin-left: 300px;
-        position: absolute;
-        color: #fff;
-        height: 100vh;
-        z-index: 2; */
-        position: absolute;
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: -210px;
-        padding: 0%;
-        z-index: 2;
-        text-align: left;
-        background: #f44336;
-    }
-
-    .btn-close {
-        display: block;
-        margin: 15px 150px;
-        color: #fff;
-        font-size: 20px;
-        cursor: pointer;
-    }
-
-    .btn-menu {
-        display: block;
-        margin: 1px;
-        color: #fff;
-        font-size: 20px;
-        cursor: pointer;
-    }
-}
-
-
-@media (max-width:768px) {
-    .navbar-collapse {
-        margin: 5px;
-        font-size: 12px;
-        font-weight: bold;
-    }
-
-}
-
 
 
 .course {
@@ -248,6 +95,23 @@ li.submenu:hover .nav-dropdown {
 }
 
 
+/* 1024 */
+
+@media (max-width:1024px) {
+    .course-col>h3 {
+        text-align: center;
+        font-weight: 600;
+        margin: 1000px;
+        width: 110%;
+    }
+
+}
+
+
+body {
+    background: #000;
+}
+
 @media (max-width:700px) {
     .row {
         display: flex;
@@ -275,7 +139,7 @@ li.submenu:hover .nav-dropdown {
     background-repeat: no-repeat;
 }
 
-.campus-col.shirt {
+/* .campus-col.shirt {
     background-image: url('/ecommerce/market/static/imgs/haryo-setyadi-acn5ERAeSb4-unsplash.jpg');
 }
 
@@ -285,7 +149,7 @@ li.submenu:hover .nav-dropdown {
 
 .campus-col.Jean {
     background-image: url("/ecommerce/market/static/imgs/f55bf732-7fa9-4b38-8464-3332d97f879a.webp");
-}
+} */
 
 
 .layer {

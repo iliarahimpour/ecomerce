@@ -1,10 +1,7 @@
 {% extends 'market/base.html' %}
 {% load static %}
-{% block title %}{% endblock title %}
-{% block extra %}{% endblock extra %}
-
 {% block style %}
-<link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+<link rel="stylesheet" href="{% static 'css/nav.css' %}">
 <style>
     .course-col h3 {
         font-size: 20px;
@@ -16,29 +13,18 @@
         font-weight: 500;
         margin-top: 15px;
     }
-
-    {% comment %} .shirt{
-        background-image: url({% static 'imgs/haryo-setyadi-acn5ERAeSb4-unsplash.jpg'%});
-    }
-    .Shoes{
-        background-image: url({% static 'imgs/danilo-capece-NoVnXXmDNi0-unsplash.jpg'%});
-    }
-    .shirt{
-        background-image: url({% static 'imgs/redd-f-jC7nVH_Sw8k-unsplash.jpg'%});
-    } {% endcomment %}
+ 
 </style>
 {% endblock style %}
-
-
-
-
+{% block title %} <title>Home Page</title>
+<link rel="stylesheet" href="{% static 'css/homestyle.css' %}">
+{% endblock title %}
 {% block content %}
 
 
 <div class="course">
-    <h1>The courses we offer</h1>
-    <p>Lorem ipsum dolor sit amet consectetur
-        iure.</p>
+    <h1>The Leates Sneakers</h1>
+    <p></p>
     <div class="container">
         <div class="row">
             {% for shoe in shoes %}
@@ -47,7 +33,7 @@
                 <h3>{{shoe.title}}</h3>
                 <p>Brand : {{shoe.brand}}</p>
                 <p>Price : {{shoe.price}}</p>
-                <a href={% url 'product_detail' pk=shoe.pk %} class="btn-hero second">Shop now</a>
+                {% comment %} <a href={% url 'product_detail' pk=shoe.pk %} class="btn-hero second">Shop now</a> {% endcomment %}
             </div>
             {% endfor %}
         </div>
@@ -84,27 +70,23 @@
 <!-- END CAMPUS -->
 
 <!-- FACILITIES -->
-<div class="facilities">
-    <div class="course">
-        <h1>The courses we offer</h1>
-        <p>Lorem ipsum dolor sit amet consectetur
-            iure.</p>
-        <div class="container">
-            <div class="row">
-                {% for shirt in shirts %}
-                <div class="col-sm-12 col-lg-4 course-col">
-                    <img src={%static 'imgs/orig-ss21-stansmith-newsroom-unisex-statement-stack-01-d_tcm221-680015-scaled-870x635.webp'%} alt="">
-
-                    <h3>{{shirt.title}}</h3>
-                    <p>Brand : {{shirt.brand}}</p>
-                    <p>Price : {{shirt.price}}</p>
-                    <a href={% url 'product_detail' pk=shirt.pk %} class="btn-hero second">Shop now</a>
-                </div>
-                {% endfor %}
+<div class="course">
+    <h1>The Leates Shirts</h1>
+    <p></p>
+    <div class="container">
+        <div class="row">
+            {% for shirt in shirts %}
+            <div class="col-sm-12 col-lg-4 course-col">
+                <img src={%static 'imgs/orig-ss21-stansmith-newsroom-unisex-statement-stack-01-d_tcm221-680015-scaled-870x635.webp'%} alt="">
+                <h3>{{shirt.title}}</h3>
+                <p>Brand : {{shirt.brand}}</p>
+                <p>Price : {{shirt.price}}</p>
+                {% comment %} <a href={% url 'product_detail' pk=shirt.pk %} class="btn-hero second">Shop now</a> {% endcomment %}
             </div>
+            {% endfor %}
         </div>
     </div>
-    </div>
+</div>
 </div>
 <!-- END FACILITIES -->
 

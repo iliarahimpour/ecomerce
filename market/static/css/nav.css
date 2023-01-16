@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+.nav-item {
+    margin-right: 15px;
+    font-size: 23px;
+    padding: 7px;
+}
+
+#navbarNav {
+    margin-right: 520px;
+}
+
+.collapse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link {
+    color: #000;
+    text-align: center;
+}
+
+.dropdown-menu {
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.drop-menu {
+    margin-left: 420px
+}
+
+.dropdown-menu li {
+    margin: 10px;
+    border-radius: 12px;
+}
+
+.dropdown-item {
+    color: #000;
+    border-radius: 5px;
+    transition: .5s;
+    text-align: center;
+}
+
+.dropdown-item:hover {
+    background-color: rgb(255, 0, 0);
+    color: aliceblue;
+}
+
+
+.account {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 12px;
+    background-color: rgb(255, 0, 0);
+    color: aliceblue;
+}
+
+.account span {
+    color: #fff;
+    font-size: 15px;
+}
+
+.account span:hover {
+    color: #fff;
+}
+
+.account svg {
+    margin-right: 3px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .collapse .main-nav {
+        margin-left: 250px;
+    }
+
+    #navbarNav {
+        margin-right: 50px;
+    }
+
+    .nav-image-holder img {
+        width: 120px;
+        display: block;
+    }
+
+    .drop-menu {
+        margin: 0px;
+    }
+
+}
