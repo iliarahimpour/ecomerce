@@ -1,1 +1,51 @@
 {% extends 'market/base.html' %}
+{% load static %}
+{% block title %}{% endblock title %}
+
+
+
+{% block style %}
+<link rel="stylesheet" href={% static 'css/shoesS.css' %}>
+{% endblock style %}
+
+
+
+
+
+{% block content %}
+<div class="campus">
+    <h1>Our Orginal Shoes</h1>
+    <p class="pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit .
+        sequi a.</p>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-lg-4 campus-col">
+                <a href='shoes/Sneakers'>
+                    <img src={% static 'imgs/erik-mclean-e_qqXYMDyfM-unsplash.jpg' %} class="img-fluid" alt="">
+                    <div class="layer">
+                        <h3>SNEAKERS</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-12 col-lg-4 campus-col">
+                <a href=""></a>
+                <img src={% static 'imgs/nathan-dumlao-t8S97r9tyt0-unsplash.jpg' %} class="img-fluid" alt="">
+                <div class="layer">
+                    <h3>BOOTS</h3>
+                </div>
+                </a>
+            </div>
+            <div class="col-sm-12 col-lg-4 campus-col">
+                <a href="">
+                    <img src={% static 'imgs/danilo-capece-NoVnXXmDNi0-unsplash.jpg' %} class="img-fluid" alt="">
+                    <div class="layer">
+                        <h3>FORMAL</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+
+
+    {% block scripts %}{% endblock scripts %}

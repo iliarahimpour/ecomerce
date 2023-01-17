@@ -1,0 +1,56 @@
+.campus {
+    margin: auto;
+    text-align: center;
+    padding-bottom: 30px;
+    width: 80%;
+}
+
+.campus-col {
+
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 3000px;
+    position: relative;
+
+}
+
+.campus-col img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 2.5px;
+    transition: all .5s;
+    padding: 0;
+    border-radius: 1px;
+    border-radius: 10px;
+}
+
+.layer h3 {
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 600;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: .5s;
+}
+
+.layer:hover {
+    background: rgba(226, 0, 0, 0.5);
+}
+
+.layer:hover h3 {
+    opacity: 1;
+    margin-bottom: 49%;
+}

@@ -9,10 +9,10 @@ from .views import ShoesPageView , JeansPageView , ShirtPageView , SetsPageView
 
 urlpatterns = [
     path('home', views.home, name="home"),
-    path('category/shoes', ShoesPageView.as_view(), name='ShoesPageView'),
-    path('category/jeans', JeansPageView.as_view(), name='JeansPageView'),
-    path('category/shirts', ShirtPageView.as_view(), name='ShirtPageView'),
-    path('category/sets', SetsPageView.as_view(), name='SetsPageView'),
+    path('product-category/shoes', ShoesPageView.as_view(), name='ShoesPageView'),
+    path('product-category/jeans', JeansPageView.as_view(), name='JeansPageView'),
+    path('product-category/shirts', ShirtPageView.as_view(), name='ShirtPageView'),
+    path('product-category/sets', SetsPageView.as_view(), name='SetsPageView'),
     
     # path('product_detail/<int:pk>/', views.product_detail, name='product_detail'),
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
