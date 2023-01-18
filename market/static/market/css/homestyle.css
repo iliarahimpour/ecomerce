@@ -5,7 +5,6 @@
 
 body {
     font-family: sans-serif;
-    background: #f44336;
 }
 
 .btn-hero {
@@ -139,17 +138,6 @@ body {
     background-repeat: no-repeat;
 }
 
-/* .campus-col.shirt {
-    background-image: url('/ecommerce/market/static/imgs/haryo-setyadi-acn5ERAeSb4-unsplash.jpg');
-}
-
-.campus-col.Shoes {
-    background-image: url('/ecommerce/market/static/imgs/danilo-capece-NoVnXXmDNi0-unsplash.jpg');
-}
-
-.campus-col.Jean {
-    background-image: url("/ecommerce/market/static/imgs/f55bf732-7fa9-4b38-8464-3332d97f879a.webp");
-} */
 
 
 .layer {
@@ -279,6 +267,10 @@ body {
     color: #fff;
     padding: 100px 0px;
     border-radius: 10px;
+}
+
+.cta img {
+    width: 50%;
 }
 
 .cta h1 {

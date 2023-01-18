@@ -17,15 +17,34 @@
 </style>
 {% endblock style %}
 {% block title %} <title>Home Page</title>
-<link rel="stylesheet" href="{% static 'css/homestyle.css' %}">
+<link rel="stylesheet" href="{% static 'market/css/homestyle.css' %}">
 {% endblock title %}
 {% block content %}
 
 
 <div class="cta">
     <div class="container">
-    <h1>Lorem ipsum dolor sit amet consectetur <br>orem ipsum
-        adipisicing elit</h1>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src={% static 'imgs/download.png' %}  class="img-fluid" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     <a href="" class="btn-hero">CONTACT US</a>
 </div>
 </div>
@@ -37,7 +56,7 @@
         <div class="row">
             {% for shoe in shoes %}
             <div class="col-sm-12 col-lg-4 course-col">
-                <img src={%static 'imgs/orig-ss21-stansmith-newsroom-unisex-statement-stack-01-d_tcm221-680015-scaled-870x635.webp'%} alt="">
+                <img src= {{ shoe.hotel_Main_Img.url }} alt="">
                 <h3>{{shoe.title}}</h3>
                 <p>Brand : {{shoe.brand}}</p>
                 <p>Price : {{shoe.price}}</p>
@@ -85,7 +104,7 @@
         <div class="row">
             {% for shirt in shirts %}
             <div class="col-sm-12 col-lg-4 course-col">
-                <img src={%static 'imgs/orig-ss21-stansmith-newsroom-unisex-statement-stack-01-d_tcm221-680015-scaled-870x635.webp'%} alt="">
+                <img src={{ hotel.hotel_Main_Img.url }}  alt="">
                 <h3>{{shirt.title}}</h3>
                 <p>Brand : {{shirt.brand}}</p>
                 <p>Price : {{shirt.price}}</p>
