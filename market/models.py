@@ -27,7 +27,7 @@ class Shoes(models.Model):
     brand=models.CharField(max_length=45)
     price=models.CharField(max_length=60)
     is_publish=models.BooleanField(default=False)
-    hotel_Main_Img = models.ImageField(upload_to='images/',blank=True , default="hello" , )
+    hotel_Main_Img = models.ImageField(upload_to='media',blank=True , default="hello" , )
     def __str__(self):
         return self.title
 

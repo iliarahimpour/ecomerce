@@ -9,7 +9,7 @@
     {% block extra %}{% endblock extra %}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-        <link rel="stylesheet" href={% static 'css/nav-00.css'%}>
+        <link rel="stylesheet" href={% static 'market/css/nav-00.css'%}>
     
     {% block style %}{% endblock style %}
 </head>
@@ -29,15 +29,14 @@
                         <a class="nav-link active" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" href="hello" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Products
                         </a>
                         <ul class="dropdown-menu drop-menu">
-                            <li><a class="dropdown-item" href= "/product-category/shoes">Shoes</a></li>
-                            <li><a class="dropdown-item" href= "/product-category/jeans">Jeans</a></li>
-                            <li><a class="dropdown-item" href= "/product-category/shirts">Shirts</a></li>
-                            <li><a class="dropdown-item" href= "/product-category/sets" >Sets</a></li>
+                            <li><a class="dropdown-item" href= "Kids">Kids</a></li>
+                            <li><a class="dropdown-item" href='womens'>Women's</a></li>
+                            <li><a class="dropdown-item" href='mens'>Men's</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">

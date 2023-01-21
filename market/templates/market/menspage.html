@@ -1,6 +1,17 @@
 {% extends 'market/base.html' %}
 {% load static %}
-{% block title %}{% endblock title %}
+
+{% block title %}
+<title>Men's Products</title>
+<style>
+    .img-banner {
+        max-width: 600px;
+        height: 480px;
+    }
+</style>
+{% endblock title %}
+
+
 
 
 
@@ -21,7 +32,7 @@
         <div class="row justify-content-center">
             <div class="col-sm-12 col-lg-4 campus-col">
                 <a href='shoes/Sneakers'>
-                    <img src={% static 'market/images/erik-mclean-e_qqXYMDyfM-unsplash.jpg' %} class="img-fluid" alt="">
+                    <img src={% static 'market/images/erik-mclean-e_qqXYMDyfM-unsplash.jpg' %} class="img-banner" alt="">
                     <div class="layer">
                         <h3>SNEAKERS</h3>
                     </div>
@@ -29,7 +40,7 @@
             </div>
             <div class="col-sm-12 col-lg-4 campus-col">
                 <a href=""></a>
-                <img src={% static 'market/images/nathan-dumlao-t8S97r9tyt0-unsplash.jpg' %} class="img-fluid" alt="">
+                <img src={% static 'market/images/nathan-dumlao-t8S97r9tyt0-unsplash.jpg' %} class="img-banner" alt="">
                 <div class="layer">
                     <h3>BOOTS</h3>
                 </div>
@@ -37,7 +48,7 @@
             </div>
             <div class="col-sm-12 col-lg-4 campus-col">
                 <a href="">
-                    <img src={% static 'market/images/danilo-capece-NoVnXXmDNi0-unsplash.jpg' %} class="img-fluid" alt="">
+                    <img src={% static 'market/images/danilo-capece-NoVnXXmDNi0-unsplash.jpg' %} class="img-banner" alt="">
                     <div class="layer">
                         <h3>FORMAL</h3>
                     </div>
