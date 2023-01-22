@@ -31,7 +31,7 @@ def home(request):
 def product(request,cat):
     cat=Type.objects.get(type=cat)
     context=Shoes.objects.filter(type=cat)
-    return render(request,"market/WomenBoot.html" , {"shoes":context})
+    return render(request,"market/WomenBoot.html" , {"shoes":context , "cat":cat})
 
 
 # def product_detail(request, pk):

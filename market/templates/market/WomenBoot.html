@@ -9,7 +9,8 @@
 
 {% block style %}
 <link rel="stylesheet" href="{% static 'market/css/shoesS.css' %}">
-<link rel="stylesheet" href="{% static 'market/css/homepage_style.css' %}">
+<link rel="stylesheet" href="{% static 'market/css/productlist.css' %}">
+
 {% endblock style %}
 
 
@@ -20,13 +21,16 @@
 
 
 <div class="course mb-5">
-    <h1>Nike</h1>
-    <p>{% lorem 2 b random %}</p>
+    <div class="title">
+        <p class="google-bread"><a href="/">Home</a> > <a href="/womens">Women</a> > <a href="">{{cat.type}}</a></p>
+        <h3 class="main-title">{{cat.title}}</h3>
+   
+    </div>
     <div class="container">
         <div class="row justify-content-center">
             {% for Shoes in shoes%}
             <div class="col-sm-12 col-lg-3 course-col">
-                <img src="{{Shoes.hotel_Main_Img.url}}"  alt="">
+                <img src="{{Shoes.hotel_Main_Img.url}}" alt="Product-img">
                 <h3>{{Shoes.title}}</h3>
                 <p>Brand : {{Shoes.brand}}</p>
                 <p>Price : {{Shoes.price}}</p>
@@ -41,4 +45,4 @@
 {% endblock content %}
 
 
-    {% block scripts %}{% endblock scripts %}
+{% block scripts %}{% endblock scripts %}

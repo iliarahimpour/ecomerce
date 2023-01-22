@@ -13,6 +13,7 @@ class Category(models.Model):
 class Type(models.Model):
     Category=models.ForeignKey(Category, on_delete=models.CASCADE)
     type=models.CharField(max_length=55)
+    title=models.CharField(max_length=50 , blank=True , default="default")
     def __str__(self):
         return self.type 
 

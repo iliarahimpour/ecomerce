@@ -9,17 +9,14 @@
     transition: 0.5s;
 }
 
-
 .btn-hero:hover {
     background: rgb(255, 0, 0);
     border: 1px solid rgb(255, 0, 0);
 }
 
-
 .course-col svg {
     color: #f44336;
 }
-
 
 .course {
     padding: 70px 0px;
@@ -29,7 +26,6 @@
     background: #f44336;
     border-radius: 5px;
 }
-
 
 .course>h1 {
     font-weight: 600;
@@ -77,9 +73,6 @@
     box-shadow: 0 0 20px 0 rgba(4, 9, 30, 0.4);
 }
 
-
-
-/* 1024 */
 
 @media (max-width:1024px) {
     .course-col .h3 {
@@ -242,7 +235,6 @@
     }
 }
 
-
 .cta {
     width: 80%;
     margin: 100px auto;
@@ -270,8 +262,6 @@
     }
 }
 
-
-
 .footer {
     width: 100%;
     text-align: center;
@@ -295,19 +285,14 @@
     padding: 15px 0px;
 }
 
-
 .bi-heart {
     color: #f44336;
 }
-
-
-
 
 .course-col h3 {
     font-size: 16px;
     font-weight: 400;
 }
-
 
 .course-col {
     text-align: left;
