@@ -1,120 +1,81 @@
 {% extends 'market/base.html' %}
 {% load static %}
 {% block style %}
-<link rel="stylesheet" href="{% static 'market/css/Home_style.css' %}">
+<link rel="stylesheet" href="{% static 'market/css/Home_Style.css' %}">
+<style>
+.main-banner {
+        
+    background-image: url({% static 'market/images/2790.jpg'%});
+}
+
+</style>
 {% endblock style %}
 {% block title %} <title>Home Page</title>
 {% endblock title %}
 
 
 {% block content %}
+<header>
+{% comment %} <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-lg p-3  bg-white rounded">
+    <div class="container-fluid py-2 bg-light ">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse col-lg-12 justify-content-lg-center" id="navbarNav">
+            <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="hello" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Products
+                    </a>
+                    <ul class="dropdown-menu drop-menu">
+                        <li><a class="dropdown-item" href="/Kids">Kids</a></li>
+                        <li><a class="dropdown-item" href='/womens'>Women's</a></li>
+                        <li><a class="dropdown-item" href='/mens'>Men's</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ">Contact</a>
+                </li>
+            </ul>
 
-
-<div class="container container-main">
-    <div class="main-slider">
-      <div class="slider-imagenes">
-        <div class="slider-img activo"><img src="https://capturetheatlas.com/wp-content/uploads/2020/04/long-exposure-and-city.jpg" alt=""></div>
-        <div class="slider-img"><img src="https://capturetheatlas.com/wp-content/uploads/2019/12/Northern-Lights-best-photograph-Iceland.jpg" alt=""></div>
-        <div class="slider-img"><img src="https://capturetheatlas.com/wp-content/uploads/2019/10/Best-tips-fall-photography.jpg" alt=""></div>
-        <div class="slider-img">  <img src={% static 'market/images/normal (1).jpg' %} class="img-banner" alt=""></div>
-      </div>
-      <div class="slider-controles">
-        <div class="slider-controles-previous">
-          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="35" height="35" x="0" y="0" viewBox="0 0 55.753 55.753" style="enable-background:new 0 0 35 35" xml:space="preserve" class="">
-            <g>
-              <g>
-                <path d="M12.745,23.915c0.283-0.282,0.59-0.52,0.913-0.727L35.266,1.581c2.108-2.107,5.528-2.108,7.637,0.001
-          c2.109,2.108,2.109,5.527,0,7.637L24.294,27.828l18.705,18.706c2.109,2.108,2.109,5.526,0,7.637
-          c-1.055,1.056-2.438,1.582-3.818,1.582s-2.764-0.526-3.818-1.582L13.658,32.464c-0.323-0.207-0.632-0.445-0.913-0.727
-          c-1.078-1.078-1.598-2.498-1.572-3.911C11.147,26.413,11.667,24.994,12.745,23.915z" fill="#FFFFFF" data-original="#FFFFFF" class=""></path>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-            </g>
-          </svg>
+            <ul class="nav second justify-content-end">
+                <li class="nav-item">
+                    <div class="nav-item account dropdown">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-person" viewBox="0 0 16 16">
+                            <path
+                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                        </svg>
+                        <span class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Account</span>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Sign in</a></li>
+                            <li><a class="dropdown-item" href="#">Login</a></li>
+                            <li><a class="dropdown-item" href="#">Cart</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
         </div>
-        <div class="slider-controles-next">
-          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="35" height="35" x="0" y="0" viewBox="0 0 55.752 55.752" style="enable-background:new 0 0 35 35" xml:space="preserve" class="">
-            <g>
-              <g>
-                <path d="M43.006,23.916c-0.28-0.282-0.59-0.52-0.912-0.727L20.485,1.581c-2.109-2.107-5.527-2.108-7.637,0.001
-          c-2.109,2.108-2.109,5.527,0,7.637l18.611,18.609L12.754,46.535c-2.11,2.107-2.11,5.527,0,7.637c1.055,1.053,2.436,1.58,3.817,1.58
-          s2.765-0.527,3.817-1.582l21.706-21.703c0.322-0.207,0.631-0.444,0.912-0.727c1.08-1.08,1.598-2.498,1.574-3.912
-          C44.605,26.413,44.086,24.993,43.006,23.916z" fill="#FFFFFF" data-original="#FFFFFF" class=""></path>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-              <g>
-              </g>
-            </g>
-          </svg>
-        </div>
-      </div>
-      <div class="slider-count-imagenes">
-        <div class="count-imagenes">
-          <div class="count-imagenes-num activo"></div>
-          <div class="count-imagenes-num"></div>
-          <div class="count-imagenes-num"></div>
-          <div class="count-imagenes-num"></div>
-        </div>
-      </div>
     </div>
-  </div>
-
+</nav> {% endcomment %}
+<div class="main-banner">
+    <!-- <h1>The biggest university</h1>
+    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        aperiam laboriosam quod excepturi <br>
+        ipsum
+        officiis .</p>
+    <a href="" class="btn-hero">Vist us to know more</a> -->
+</div>
+</header>
 
 <div class="course my-5">
     <h1>Nike</h1>
@@ -135,12 +96,15 @@
 </div>
 </div>
 
+
+
+
 <div class="course mb-5">
     <h1>Nike</h1>
     <p></p>
     <div class="container">
         <div class="row justify-content-center">
-            {% for shoe in nike_shoes%}
+            {% for shoe in skechers_shoess%}
             <div class="col-sm-12 col-lg-3 course-col">
                 <img src="{{shoe.hotel_Main_Img.url}}" alt="">
                 <h3>{{shoe.title}}</h3>

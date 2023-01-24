@@ -48,7 +48,7 @@ body {
 }
 
 .dropdown-item:hover {
-    background-color: rgb(255, 0, 0);
+    background-color: #ff103f;
     color: aliceblue;
 }
 
@@ -58,7 +58,7 @@ body {
     align-items: center;
     justify-content: space-around;
     border-radius: 12px;
-    background-color: rgb(255, 0, 0);
+    background-color: #ff103f;
     color: aliceblue;
 }
 

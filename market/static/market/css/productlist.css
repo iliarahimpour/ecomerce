@@ -16,7 +16,7 @@
 
 
 .btn-hero:hover {
-    background: rgb(255, 0, 0);
+    background-color: #ff103f;
     border: 1px solid rgb(255, 0, 0);
     color: #fff;
 }

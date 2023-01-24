@@ -9,7 +9,6 @@ from django.views.generic import TemplateView , ListView
 class ShoesPageView(TemplateView):
    template_name = 'market/shoespage.html'
 
-
 class WomenProductView(ListView):
     model=Shoes
     template_name='market/womenpage.html'
@@ -20,19 +19,36 @@ class MenProductView(ListView):
 
 
 # Function-Based Views /////////////////////////
+
 def home(request):
-    shoes = Shoes.objects.all()
-    nike_shoes=Shoes.objects.filter(brand="Nike")[:3]
-    converse_shoes=Shoes.objects.filter(brand="Converse")
-    skechers_shoes=Shoes.objects.filter(brand="SKECHERS")
-    return render(request, "market/homepage.html",{"shoes":shoes ,"nike_shoes":nike_shoes , "converse_shoes":converse_shoes,"skechers_shoes":skechers_shoes})
+    try:
+        shoes = Shoes.objects.all()
+        nike_shoes=Shoes.objects.filter(brand="Nike")[:3]
+        converse_shoes=Shoes.objects.filter(brand="Converse")
+        skechers_shoes=Shoes.objects.filter(brand="SKECHERS")
+        return render(request, "market/homepage.html",{"shoes":shoes ,"nike_shoes":nike_shoes , "converse_shoes":converse_shoes,"skechers_shoes":skechers_shoes})
+    except:
+        return render(request,"market/404-error.html",{})
+
+def product_women(request,cat):
+    try:
+        cat=Type.objects.get(type=cat)
+        context=Shoes.objects.filter(type=cat)
+        return render(request,"market/Women_Product_list_page.html" , {"shoes":context , "cat":cat})
+    except:
+        return render(request,"market/404-error.html",{})
+
+def product_men(request,cat):
+    try:
+        cat=Type.objects.get(type=cat)
+        context=Shoes.objects.filter(type=cat)
+        return render(request,"market/Women_Product_list_page.html" , {"shoes":context , "cat":cat})
+    except:
+        return render(request,"market/404-error.html",{})
 
 
-def product(request,cat):
-    cat=Type.objects.get(type=cat)
-    context=Shoes.objects.filter(type=cat)
-    return render(request,"market/WomenBoot.html" , {"shoes":context , "cat":cat})
-
+def error(request):
+    return render(request,"market/404-error.html",{})
 
 # def product_detail(request, pk):
 #     try:
