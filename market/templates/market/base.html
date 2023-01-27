@@ -1,7 +1,6 @@
 {% load static %}
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,65 +8,117 @@
     {% block extra %}{% endblock extra %}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-        <link rel="stylesheet" href={% static 'market/css/nav-00.css'%}>
-    
+    <link rel="stylesheet" href={% static 'market/css/header_base.css' %}>
     {% block style %}{% endblock style %}
 </head>
 
 <body>
 {% comment %} Nav Section {% endcomment %}
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-lg p-3  bg-white rounded">
-        <div class="container-fluid py-2 bg-light ">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse col-lg-12 justify-content-lg-center" id="navbarNav">
-                <ul class="navbar-nav ">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link dropdown-toggle" href="hello" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Products
-                        </a>
-                        <ul class="dropdown-menu drop-menu">
-                            <li><a class="dropdown-item" href= "/Kids">Kids</a></li>
-                            <li><a class="dropdown-item" href='/womens'>Women's</a></li>
-                            <li><a class="dropdown-item" href='/mens'>Men's</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link ">Contact</a>
-                    </li>
-                </ul>
-
-                <ul class="nav second justify-content-end">
-                    <li class="nav-item">
-                        <div class="nav-item account dropdown">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                class="bi bi-person" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
-                            </svg>
-                            <span class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">Account</span>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Sign in</a></li>
-                                <li><a class="dropdown-item" href="#">Login</a></li>
-                                <li><a class="dropdown-item" href="#">Cart</a></li>
-                            </ul>
+<nav class="navbar navbar-expand-lg bg-body-tertiary nav-bar">
+    <div class="container-fluid p-4">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseProduct" aria-expanded="false" aria-controls="collapseProduct"
+                        href="#">Products</a>
+                    <div class="collapse" id="collapseProduct">
+                        <div class="card card-body">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item list-group-item-action ">
+                                    Sport Shoes
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    Boots
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">Formal</a>
+                            </div>
                         </div>
-                    </li>
-                </ul>
-            </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " type="button" data-bs-toggle="collapse" data-bs-target="#collapseWomen"
+                        aria-expanded="false" aria-controls="collapseWomen" href="#">womens</a>
+                    <div class="collapse" id="collapseWomen">
+                        <div class="card card-body">
+                            <div class="list-group">
+                                <a href="womens/Women-sport" class="list-group-item list-group-item-action ">
+                                    Sneakers
+                                </a>
+                                <a href="womens/Flat-Shoes" class="list-group-item list-group-item-action">
+                                    Flat Shoes
+                                </a>
+                                <a href="womens/Women-Boots"
+                                    class="list-group-item list-group-item-action">Boots</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " type="button" data-bs-toggle="collapse" data-bs-target="#collapseMen"
+                        aria-expanded="false" aria-controls="collapseMen" href="#">Men</a>
+                    <div class="collapse" id="collapseMen">
+                        <div class="card card-body">
+                            <div class="list-group">
+                                <a href="men/Men-sport" class="list-group-item list-group-item-action ">
+                                    Sneakers
+                                </a>
+                                <a href="men/Men-Boots" class="list-group-item list-group-item-action">
+                                    Formal Shoes
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">Boots</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link " type="button" data-bs-toggle="collapse" data-bs-target="#collapseKid"
+                        aria-expanded="false" aria-controls="collapseKid" href="#">Kids</a>
+                    <div class="collapse" id="collapseKid">
+                        <div class="card card-body">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item list-group-item-action ">
+                                    Cras justo odio
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis
+                                    in</a>
+                                <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+                                <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur
+                                    ac</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <div class="nav-item account dropdown">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-person" viewBox="0 0 16 16">
+                            <path
+                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                        </svg>
+                        <span class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Account</span>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Sign in</a></li>
+                            <li><a class="dropdown-item" href="#">Login</a></li>
+                            <li><a class="dropdown-item" href="#">Cart</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
     {% block content %}
     {% endblock content %}
 
