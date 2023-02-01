@@ -21,14 +21,13 @@ class MenProductView(ListView):
 # Function-Based Views /////////////////////////
 
 def home(request):
-    try:
+  
         shoes = Shoes.objects.all()
-        nike_shoes=Shoes.objects.filter(brand="Nike")[:3]
-        converse_shoes=Shoes.objects.filter(brand="Converse")
-        skechers_shoes=Shoes.objects.filter(brand="SKECHERS")
+        nike_shoes=Shoes.objects.filter(brand="Nike").order_by()[:3]
+        converse_shoes=Shoes.objects.filter(brand="Converse")[:3]
+        skechers_shoes=Shoes.objects.filter(brand="SKECHERS")[:3]
         return render(request, "market/homepage.html",{"shoes":shoes ,"nike_shoes":nike_shoes , "converse_shoes":converse_shoes,"skechers_shoes":skechers_shoes})
-    except:
-        return render(request,"market/404-error.html",{})
+
 
 def product_women(request,cat):
     try:
@@ -49,6 +48,14 @@ def product_men(request,cat):
 
 def error(request):
     return render(request,"market/404-error.html",{})
+
+# def brand_type_op(request,brand):
+#     try:
+#         context=Shoes.objects.filter(brand=brand)
+#         return render(request, "market/Hello.html",{"Shoes":context})
+#     except:
+#          return render(request,"market/404-error.html",{})
+
 
 # def product_detail(request, pk):
 #     try:

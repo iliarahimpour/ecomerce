@@ -1,0 +1,59 @@
+.brand-section {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    background-color: #F2E5E5;
+}
+
+.brnad-holder {
+    margin: 0px auto;
+    padding: 22px;
+}
+
+.brand-logo {
+    margin-right: 42px;
+}
+
+.brand-logo svg {
+    width: 100%;
+}
+
+.brand-logo img {
+    width: 100%;
+    padding: 5%;
+    margin-top: 70px;
+}
+
+@media only screen and (max-width: 768px) {
+    .brand-logo svg {
+        width: 50%;
+    }
+
+    .brand-logo img {
+        width: 50%;
+        padding: 5%;
+        margin-top: 70px;
+    }
+}
+
+
+.course {
+    background: #3C6255;
+}
+
+.btn-hero.second {
+    border: 1.5px solid #3C6255;
+}
+
+.btn-hero.second:hover {
+    background-color: hsl(158, 36%, 17%);
+}
+
+.brand-btn {
+    border: 1.5px solid #F2E5E5;
+}
+
+.brand-btn:hover {
+    background-color: hsl(158, 36%, 17%);
+    color: #F2E5E5;
+    border: 1.5px solid hsl(0, 0%, 100%);
+}

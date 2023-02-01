@@ -15,6 +15,7 @@ urlpatterns = [
     path("womens/<str:cat>", views.product_women, name="product_women"),
     path("men/<str:cat>", views.product_men, name="product_men"),
     path("error", views.error, name="error"),
+    # path("brand_type/<str:brand>", views.brand_type_op, name="brand_type"),
     # path('product_detail/<int:pk>/', views.product_detail, name='product_detail'),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
