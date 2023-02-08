@@ -1,0 +1,43 @@
+{% extends 'market/base.html' %}
+{% load static %}
+
+{% block title %}
+<title>{{Brand}} Products</title>
+{% endblock title %}
+
+
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'market/css/productlist_style.css' %}">
+
+{% endblock style %}
+
+
+{% block content %}
+
+<div class="course mb-5">
+    <div class="title">
+        <p class="google-bread"><a href="/">Home</a> > <a href="/women">{{Brand}}</a></p>
+        <h3 class="main-title">{{cat.title}}</h3>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            {% for shoe in Shoes%}
+            <div class="col-sm-12 col-lg-4 course-col">
+                <img src="{{shoe.product_main_images.url}}" alt="">
+                <h3>{{Shoes.title}}</h3>
+                <hr>
+                <p>Brand : {{shoe.Witch_brnad}}</p>
+                <p>Price : <span>{{shoe.price}}</span></p>
+                <a href='' class="btn-hero second">Shop now</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+</div>
+
+{% endblock content %}
+
+
+{% block scripts %}{% endblock scripts %}

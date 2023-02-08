@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 
+
+.banner-container {
+    max-width: 1617px;
+}
+
 .main-banner {
     position: relative;
     text-align: center;
@@ -171,7 +176,7 @@ header {
     background: #fff;
     border-radius: 10px;
     margin-bottom: 5%;
-    padding: 2px 12px;
+    padding: 28px 19px;
     box-sizing: border-box;
     line-height: 23px;
     transition: .5s;
@@ -201,7 +206,9 @@ header {
     color: #Fff;
 }
 
-
+.btn-hero.extra {
+    margin-top: -40px;
+}
 
 .course-col:hover {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;

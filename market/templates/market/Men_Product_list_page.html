@@ -2,14 +2,13 @@
 {% load static %}
 
 {% block title %}
-<title>Women's Products</title>
+<title>Men's Products</title>
 {% endblock title %}
 
 
 
 {% block style %}
-<link rel="stylesheet" href="{% static 'market/css/shoesS.css' %}">
-<link rel="stylesheet" href="{% static 'market/css/productlist.css' %}">
+<link rel="stylesheet" href="{% static 'market/css/productlist_style.css' %}">
 
 {% endblock style %}
 
@@ -18,19 +17,23 @@
 
 
 {% block content %}
+
+
 <div class="course mb-5">
     <div class="title">
-        <p class="google-bread"><a href="/">Hfgome</a> > <a href="/mens">Men</a> > <a href="">{{cat.type}}</a></p>
+        <p class="google-bread"><a href="/">Home</a> > <a href="/men">Men</a> > <a href="">{{cat.type}}</a></p>
         <h3 class="main-title">{{cat.title}}</h3>
+   
     </div>
     <div class="container">
         <div class="row justify-content-center">
             {% for Shoes in shoes%}
-            <div class="col-sm-12 col-lg-3 course-col">
-                <img src="{{Shoes.hotel_Main_Img.url}}" alt="Product-img">
+            <div class="col-sm-12 col-lg-4 course-col">
+                <img src="{{Shoes.product_main_images.url}}" alt="">
                 <h3>{{Shoes.title}}</h3>
-                <p>Brand : {{Shoes.brand}}</p>
-                <p>Price : {{Shoes.price}}</p>
+                <hr>
+                <p>Brand : {{Shoes.Witch_brnad}}</p>
+                <p>Price : <span>{{Shoes.price}}</span></p>
                 <a href='' class="btn-hero second">Shop now</a>
             </div>
             {% endfor %}
@@ -38,6 +41,7 @@
     </div>
 </div>
 </div>
+
 {% endblock content %}
 
 

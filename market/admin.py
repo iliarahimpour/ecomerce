@@ -13,7 +13,7 @@ class TypeAdmin(admin.ModelAdmin):
 class ImageAdmin(admin.ModelAdmin):
     list_display=["shoe"]
 class BrandAdmin(admin.ModelAdmin):
-    list_display=["brand"]
+    list_display=["id","brand"]
 
 admin.site.register(Category,CatAdmin)
 admin.site.register(Type,TypeAdmin)

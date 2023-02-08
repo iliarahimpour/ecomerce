@@ -1,0 +1,131 @@
+.course {
+    display: block;
+    padding: 55px 10px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    border-radius: 5px;
+
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+
+
+.course-col {
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 28px 19px;
+    box-sizing: border-box;
+    line-height: 23px;
+    transition: .5s;
+    margin: 0px 13px;
+    text-align: left;
+    font-weight: 500;
+    margin-top: 15px;
+    max-width: 350px;
+    transition: all .4s;
+
+}
+
+.course-col img {
+    width: 100%;
+    border-radius: 14px;
+    margin-bottom: 16px;
+}
+
+.course-col h3 {
+    font-size: 19px;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: #3C6255;
+}
+
+.course-col p span {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.col-brand img {
+    max-width: 200px;
+    margin: 12px 0px;
+    color: #Fff;
+}
+
+.btn-hero.extra {
+    margin-top: -40px;
+}
+
+.course-col:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    ;
+}
+
+@media (max-width:803px) {
+    .course-col {
+        background: #fff;
+        border-radius: 10px;
+        margin-bottom: 2%;
+        padding: 1px 12px;
+        box-sizing: border-box;
+        line-height: 23px;
+        transition: .5s;
+        margin: 20px auto;
+    }
+
+
+}
+
+.title {
+    text-align: start;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.main-title {
+    border-bottom: 7px solid #3C6255;
+    padding-bottom: 12px;
+    width: 500px;
+    margin-bottom: 30px;
+}
+
+.google-bread a {
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.btn-hero {
+    border: 1px solid #fff;
+    color: #fff;
+    padding: .7rem 3rem;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    font-size: 16px !important;
+    transition: 0.5s;
+    border-radius: 12px;
+    display: inline-block;
+    margin: 15px 0px;
+    color: #000;
+}
+
+
+.btn-hero.second {
+    border: 1.5px solid #3C6255;
+}
+
+.btn-hero.second:hover {
+    background-color: hsl(158, 36%, 17%);
+}
+
+.btn-hero {
+    border: 1.5px solid #F2E5E5;
+}
+
+.btn-hero:hover {
+    background-color: hsl(158, 36%, 17%);
+    color: #F2E5E5;
+    border: 1.5px solid hsl(0, 0%, 100%);
+}

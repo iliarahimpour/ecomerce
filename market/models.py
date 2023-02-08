@@ -35,6 +35,8 @@ class Shoes(models.Model):
     publish_date=models.DateTimeField(auto_now_add=True)
     price = models.CharField(max_length=60)
     is_publish = models.BooleanField(default=False)
+    product_main_images = models.ImageField(
+        upload_to='media', blank=True, default="hello", )
     def __str__(self):
         return self.title
     
@@ -42,7 +44,7 @@ class Shoes(models.Model):
 class Image(models.Model):
         shoe=models.ForeignKey(Shoes,on_delete=models.CASCADE)
         title=models.CharField(max_length=50 ,blank=True,default="Noun")
-        Product_main_image = models.ImageField(
+        product_images = models.ImageField(
         upload_to='media', blank=True, default="hello", )
         def __str__(self):
             return self.title
